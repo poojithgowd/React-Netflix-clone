@@ -1,0 +1,30 @@
+.bg{
+    background-image: url('../../assets/loginBg.jpg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed;  */
+    background-size: 100% 100%;
+    color: white;
+
+ } 
+.cen{
+  padding-top: 15%; 
+  text-align: center;  
+  padding-bottom: 5%;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  
+}
+.btransparent{
+  background-color: rgba(7, 6, 6, 0.5);
+  color: white;
+}
+.acc{
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgba(7, 6, 6, 0.5);
+
+}
