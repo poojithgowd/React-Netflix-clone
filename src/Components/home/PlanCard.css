@@ -1,0 +1,21 @@
+/* src/components/PlanCard.css */
+.plan-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .plan-price {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  
+  
+
+  
+ 
+  

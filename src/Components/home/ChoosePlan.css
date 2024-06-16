@@ -1,0 +1,15 @@
+/* src/components/ChoosePlan.css */
+.choose-plan {
+    text-align: center;
+    /* padding: 20px; */
+   
+  }
+  
+  .plan-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+ 
+  

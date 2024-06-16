@@ -7,6 +7,7 @@ import phone from "../../assets/mobile.jpg";
 import device from "../../assets/device.png";
 import child from "../../assets/childrean.png";
 import vediodev from '../../assets/video-devices-in.m4v'
+import Form from "./Form";
 
 const Home = () => {
   return (
@@ -35,19 +36,7 @@ const Home = () => {
             Ready to watch? Enter your email to create or restart your
             membership.
           </h4>
-
-          <form className="d-flex justify-content-center pb-5 ">
-            <input
-              type="email"
-              size={40}
-              placeholder="enter mail"
-              className="btransparent"
-            />
-            &nbsp;
-            <button type="submit" class="btn btn-danger ">
-              <h3>Get Started &nbsp;&gt;</h3>
-            </button>
-          </form>
+          <Form/>
         </div>
       </div>
 
@@ -68,7 +57,7 @@ const Home = () => {
           <div class="col-lg-6 mb-12 sm-12 py-5 center">
             <img src={tv} alt="TV image" style={{position:"absolute"}} />
             <div >
-          <video width="470" height="450"  loop autoPlay muted>
+          <video width="470" height="450"  loop autoPlay muted >
             <source
               src={vedio}
               type="video/mp4"/>
@@ -119,7 +108,7 @@ const Home = () => {
           <div class="col-lg-6 mb-12 sm-12 py-5 center">
             <img src={device} alt="TV image" style={{position:"absolute"}}></img>
             <div >
-          <video width="470" height="450"  loop autoPlay muted>
+          <video width="400" height="450"  loop autoPlay muted className="deviceved">
             <source
               src={vediodev}
               type="video/mp4"/>
@@ -161,8 +150,9 @@ const Home = () => {
         <div
           class="accordion accordion-flush acc p-5"
           id="accordionFlushExample"
+          
         >
-          <div class="accordion-item">
+          <div class="accordion-item" >
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -171,6 +161,7 @@ const Home = () => {
                 data-bs-target="#flush-collapseOne"
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
+                style={{backgroundColor:"hsl(0, 0%, 20%)", color:"white"}}
               >
                 <h2>What is Netflix?</h2>
               </button>
@@ -180,8 +171,8 @@ const Home = () => {
               class="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                {" "}
+              <div class="accordion-body " style={{backgroundColor:"hsl(0, 0%, 20%)", color:"white"}}>
+                
                 Netflix is a streaming service that offers a wide variety of
                 award-winning TV shows, movies, anime, documentaries and more –
                 on thousands of internet-connected devices.
@@ -197,6 +188,7 @@ const Home = () => {
                 data-bs-target="#flush-collapseTwo"
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
+                style={{backgroundColor:"hsl(0, 0%, 20%)", color:"white"}}
               >
                 <h2>How much does Netflix cost?</h2>
               </button>
@@ -206,7 +198,7 @@ const Home = () => {
               class="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
+              <div class="accordion-body" style={{backgroundColor:"hsl(0, 0%, 20%)", color:"white"}}>
                 Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
                 streaming device, all for one fixed monthly fee. Plans range
                 from ₹149 to ₹649 a month. No extra costs, no contracts.
@@ -222,6 +214,7 @@ const Home = () => {
                 data-bs-target="#flush-collapseThree"
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
+                style={{backgroundColor:"hsl(0, 0%, 20%)", color:"white"}}
               >
                 <h2>Where can I Watch?</h2>
               </button>
@@ -231,7 +224,7 @@ const Home = () => {
               class="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
+              <div class="accordion-body" style={{backgroundColor:"hsl(0, 0%, 20%)", color:"white"}}>
                 Watch anywhere, anytime. Sign in with your Netflix account to
                 watch instantly on the web at netflix.com from your personal
                 computer or on any internet-connected device that offers the
@@ -253,6 +246,7 @@ const Home = () => {
                 data-bs-target="#flush-collapseFour"
                 aria-expanded="false"
                 aria-controls="flush-collapseFour"
+                style={{backgroundColor:"hsl(0, 0%, 20%)", color:"white"}}
               >
                 <h2>How do I cancel?</h2>
               </button>
@@ -262,8 +256,8 @@ const Home = () => {
               class="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                {" "}
+              <div class="accordion-body" style={{backgroundColor:"hsl(0, 0%, 20%)", color:"white"}}>
+                
                 Netflix is flexible. There are no annoying contracts and no
                 commitments. You can easily cancel your account online in two
                 clicks. There are no cancellation fees – start or stop your
@@ -280,6 +274,7 @@ const Home = () => {
                 data-bs-target="#flush-collapseFive"
                 aria-expanded="false"
                 aria-controls="flush-collapseFive"
+                style={{backgroundColor:"hsl(0, 0%, 20%)", color:"white"}}
               >
                 <h2>What can I Watch on Netflix?</h2>
               </button>
@@ -289,7 +284,7 @@ const Home = () => {
               class="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
+              <div class="accordion-body" style={{backgroundColor:"hsl(0, 0%, 20%)", color:"white"}}>
                 Netflix has an extensive library of feature films,
                 documentaries, TV shows, anime, award-winning Netflix originals,
                 and more. Watch as much as you want, anytime you want.
@@ -305,8 +300,9 @@ const Home = () => {
                 data-bs-target="#flush-collapseSix"
                 aria-expanded="false"
                 aria-controls="flush-collapseSix"
+                style={{backgroundColor:"hsl(0, 0%, 20%)", color:"white"}}
               >
-                <h2>Is Netflix good for kids?</h2>
+                <h2 >Is Netflix good for kids?</h2>
               </button>
             </h2>
             <div
@@ -314,7 +310,7 @@ const Home = () => {
               class="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
+              <div class="accordion-body" style={{backgroundColor:"hsl(0, 0%, 20%)", color:"white"}}>
                 The Netflix Kids experience is included in your membership to
                 give parents control while kids enjoy family-friendly TV shows
                 and films in their own space.
@@ -329,22 +325,14 @@ const Home = () => {
         <h4 className="center p-3" style={{ color: "white" }}>
           Ready to watch? Enter your email to create or restart your membership.
         </h4>
-        <form className="d-flex justify-content-center p-5 ">
-          <input
-            type="email"
-            size={40}
-            placeholder="enter mail"
-            className="btransparent"
-          />{" "}
-          &nbsp;
-          <button type="submit" class="btn btn-danger ">
-            <h3>Get Started &nbsp;&gt;</h3>
-          </button>
-        </form>
-        
+       <Form/>
       </div>
     </div>
   );
 };
 
 export default Home;
+
+
+
+
