@@ -2,6 +2,7 @@ import React from 'react'
 import image from "../../assets/netflixlogo.png";
 import tick from '../../assets/tick.png'
 import { useNavigate } from 'react-router-dom';
+import Nav from './Nav';
 const ChooseurPlan = () => {
   const navigate = useNavigate();
   const handlenext= () => {
@@ -9,16 +10,7 @@ const ChooseurPlan = () => {
   }
   return (
     <div>
-      <div className="container d-flex mt-3">
-          <div>
-            <img src={image} alt="no image"></img>
-          </div>
-          <div className="ms-auto py-4">
-            <button type="button" class="btn btn-danger">
-              Sign In 
-            </button>
-          </div>
-        </div>
+     <Nav/>
         <div className='accdiv mt-5' style={{width:"40%"}}>
         <img src={tick} alt="setimage" className='accima'  ></img>
         <h6 className='d-flex justify-content-center mt-3'>STEP 3 OF 4</h6>

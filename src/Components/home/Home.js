@@ -1,6 +1,6 @@
 import React from "react";
 import StylesHome from "./StylesHome.css";
-import image from "../../assets/netflixlogo.png";
+// import image from "../../assets/netflixlogo.png";
 import tv from "../../assets/tv.png";
 import vedio from "../../assets/tv vedio.m4v";
 import phone from "../../assets/mobile.jpg";
@@ -8,21 +8,13 @@ import device from "../../assets/device.png";
 import child from "../../assets/childrean.png";
 import vediodev from '../../assets/video-devices-in.m4v'
 import Form from "./Form";
+import Nav from "./Nav";
 
 const Home = () => {
   return (
     <div style={{ backgroundColor: "rgb(60, 60, 60)" }}>
       <div className="bg container-fluid">
-        <div className="container d-flex">
-          <div>
-            <img src={image} alt="no image"></img>
-          </div>
-          <div className="ms-auto py-4">
-            <button type="button" class="btn btn-danger">
-              Sign In 
-            </button>
-          </div>
-        </div>
+        <Nav/>
 
         <div className="cen">
           <h1 className="d-flex justify-content-center display-3 ">

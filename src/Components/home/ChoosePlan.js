@@ -54,7 +54,7 @@ const ChoosePlan = () => {
   };
   const navigate = useNavigate();
   const handlenext= () => {
-    navigate('/payment');
+    navigate('/loginhome');
   }
 
   return (

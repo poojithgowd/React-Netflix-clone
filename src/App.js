@@ -7,6 +7,8 @@ import ChooseurPlan from './Components/home/ChooseurPlan'
 // import Selectamount from './Components/home/Selectamount'
 import ChoosePlan from './Components/home/ChoosePlan'
 import Payment from './Components/home/Payment'
+import SigIn from './Components/home/SigIn'
+import LoginHome from './Components/Login/LoginHome'
 
 const App = () => {
   return (
@@ -20,9 +22,8 @@ const App = () => {
                 <Route path="/chooseurplan" element={<ChooseurPlan/>} />
                 <Route path="/select" element={<ChoosePlan/>} />
                 <Route path='/payment' element={<Payment/>}/>
-
-
-
+                <Route path='/signin' element={<SigIn/>}/>
+                <Route path='/loginhome' element={<LoginHome/>}/>
                 </Routes>
        </BrowserRouter>
     </div>
