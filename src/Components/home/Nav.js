@@ -17,6 +17,7 @@ const Nav = () => {
             <button type="button" class="btn btn-danger" onClick={SignHandler}>
               Sign In 
             </button>
+
           </div>
         </div>
     </div>

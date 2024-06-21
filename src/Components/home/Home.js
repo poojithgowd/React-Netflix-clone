@@ -9,10 +9,11 @@ import child from "../../assets/childrean.png";
 import vediodev from '../../assets/video-devices-in.m4v'
 import Form from "./Form";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
-    <div style={{ backgroundColor: "rgb(60, 60, 60)" }}>
+    <div  style={{ backgroundColor: "rgb(60, 60, 60)" }}>
       <div className="bg container-fluid">
         <Nav/>
 
@@ -33,9 +34,9 @@ const Home = () => {
       </div>
 
       <div className="container-fluid mt-2 "style={{ backgroundColor: "black" }} >
-        <div class="row">
+        <div className="row">
           <div
-            class="col-lg-6 mb-12 sm-12 align-self-center mt-5 "
+            className="col-lg-6 mb-12 sm-12 align-self-center mt-5 "
             style={{ color: "white" }}
           >
             <h1 className="center">
@@ -46,10 +47,10 @@ const Home = () => {
               Blu-ray players and more.
             </h4>
           </div>
-          <div class="col-lg-6 mb-12 sm-12 py-5 center">
-            <img src={tv} alt="TV image" style={{position:"absolute"}} />
+          <div className="col-lg-6 mb-12 sm-12 py-5 center" >
+            <img src={tv} alt="TV image" style={{ width: '100%', maxWidth: '500px',position:"absolute"}} className="mgb " />
             <div >
-          <video width="470" height="450"  loop autoPlay muted >
+          <video width="358" height="350"  loop autoPlay muted className="mb-5" >
             <source
               src={vedio}
               type="video/mp4"/>
@@ -64,11 +65,11 @@ const Home = () => {
       >
         <div class="row">
           <div class="col-lg-6 mb-12 sm-12 py-5 center">
-            <img src={phone} alt="TV image"></img>
+            <img src={phone} alt="TV image" style={{width: '100%', maxWidth: '500px'}}></img>
           </div>
 
           <div
-            class="col-lg-6 mb-12 sm-12 align-self-center mt-5 py-5"
+            class="col-lg-6 mb-12 sm-12 align-self-center py-5"
             style={{ color: "white" }}
           >
             <h1 className="center mx-5 px-5">
@@ -97,10 +98,10 @@ const Home = () => {
               laptop, and TV.
             </h4>
           </div>
-          <div class="col-lg-6 mb-12 sm-12 py-5 center">
-            <img src={device} alt="TV image" style={{position:"absolute"}}></img>
+          <div class="col-lg-6 mb-12 sm-12 py-5 center mb-5">
+            <img src={device} alt="TV image" style={{width: '100%', maxWidth: '500px',position:"absolute"}} className="my-5"></img>
             <div >
-          <video width="400" height="450"  loop autoPlay muted className="deviceved">
+          <video  width="310" height="350"  loop autoPlay muted >
             <source
               src={vediodev}
               type="video/mp4"/>
@@ -115,7 +116,7 @@ const Home = () => {
       >
         <div class="row">
           <div class="col-lg-6 mb-12 sm-12 py-5 center">
-            <img src={child} alt="TV image"></img>
+            <img src={child} alt="TV image" style={{width: '100%', maxWidth: '500px'}}></img>
           </div>
 
           <div
@@ -319,6 +320,7 @@ const Home = () => {
         </h4>
        <Form/>
       </div>
+      <Footer/>
     </div>
   );
 };

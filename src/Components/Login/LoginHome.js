@@ -3,7 +3,10 @@ import React from 'react'
 const LoginHome = () => {
   return (
     <div>
-      this is login page
+     <div className='container-fluid'>
+      
+login
+     </div>
     </div>
   )
 }

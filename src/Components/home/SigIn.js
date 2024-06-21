@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import image from "../../assets/netflixlogo.png";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -14,8 +14,12 @@ const SigIn = () => {
 
     axios.get('https://6650db4720f4f4c442765707.mockapi.io/crud')
     .then(response => {
+      // console.log(response)
+      // console.log(response.data)
       const users = response.data;
+      // console.log(users)
       const user = users.find((user) => user.email === email);
+      // console.log(user)
       if (user && user.password === password) {
         navigate('/loginhome')
       } 
@@ -23,7 +27,14 @@ const SigIn = () => {
         alert("ur password and user name is missmatched")
         navigate('/sigin')
       } })
+     
+      
   };
+  useEffect(()=>{
+    setEmail(sessionStorage.getItem("mailid"))
+  
+  },[])
+ 
   return (
     <div id="SignIn">
          <div className="bg container-fluid">

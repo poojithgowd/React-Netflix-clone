@@ -41,4 +41,6 @@
   list-style: none; /* Remove default bullet points */
  
 }
-
+.col{
+  color: white;
+}

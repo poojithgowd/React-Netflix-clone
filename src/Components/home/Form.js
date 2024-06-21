@@ -10,7 +10,6 @@ const Form = () => {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState('');
-  // const [error, setError] = useState(null);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -25,9 +24,9 @@ const Form = () => {
       } else {
         navigate('/getstarted')
       }
-      // var mail=email
-      // sessionStorage.setItem("mailid",mail)
-    //  console.log(sessionStorage.getItem('mailid'))
+      var mail=email
+      sessionStorage.setItem("mailid",mail)
+     console.log(sessionStorage.getItem('mailid'))
   };
   return (
     <div>
